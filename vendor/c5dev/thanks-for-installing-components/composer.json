@@ -1,0 +1,18 @@
+{
+    "name": "c5dev/thanks-for-installing-components",
+    "description": "Post-package install thank you page components.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oliver Green",
+            "email": "oliver@boxedcode.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "C5dev\\Package\\Thanks\\": "src/"
+        }
+    }
+}

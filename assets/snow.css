@@ -1,0 +1,18 @@
+.particle{
+    background:white;
+    position:absolute;
+    border-radius:20px;
+}
+.ccm-block-custom-template-snow {
+    position: relative;
+}
+
+.ccm-block-custom-template-snow.snow-on-top .snow-effect-container {
+    z-index: 2;
+}
+
+.snow-effect-container {
+    width: 100%; height:100%; 
+    top: 0; left: 0; 
+    position: absolute; z-index: 0;
+}

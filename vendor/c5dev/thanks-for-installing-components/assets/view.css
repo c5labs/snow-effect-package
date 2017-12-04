@@ -1,0 +1,123 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+.ccm-dashboard-page-header {
+    display: none !important;
+}
+
+#thanksPageContent {
+    font-family: "Lato", sans-serif;
+    margin-top: 100px;
+}
+
+#thanksPageContent h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+}
+
+#confettiWorld {
+    position: fixed !important;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+iframe {
+    width: 100%; height: 180px; overflow: none;
+    transition: height .5s;
+}
+
+#formOuter {
+    background: rgba(255, 255, 255, 1); 
+    min-height: 400px; 
+    margin-top: 40px;
+}
+
+#formInner {
+    padding: 20px 40px 40px; 
+    font-size: 1.4em; 
+    line-height: 1.6em;
+}
+
+#signupContent h2 {
+    font-weight: 600;
+    margin-top: 0; margin-bottom: 30px;
+}
+
+#signupConten p {
+    font-size: .90em;
+}
+
+#backLink {
+    display: block; margin-top: 20px;
+}
+
+#thanksPageContent footer {
+    margin-top: 20px; color: #999;
+}
+
+#thanksPageContent footer a {
+    color: #999; text-decoration: underline;
+}
+
+#thanksPageContent footer a:hover {
+    color: #000;
+}
+
+@keyframes confetti-slow {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+    }
+}
+@keyframes confetti-medium {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+    }
+}
+@keyframes confetti-fast {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+    }
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.confetti-container {
+    perspective: 700px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.confetti {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    border-radius: 0%;
+}
+.confetti--animation-slow {
+    animation: confetti-slow 2.25s linear 1 forwards;
+}
+.confetti--animation-medium {
+    animation: confetti-medium 1.75s linear 1 forwards;
+}
+.confetti--animation-fast {
+    animation: confetti-fast 1.25s linear 1 forwards;
+}
