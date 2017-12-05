@@ -1,3 +1,5 @@
+// Credit to Alan Clarke
+// https://codepen.io/alanclarke/pen/gKkni?page=1&
 $(function() {
     //a point in 3d space
     function Particle (opts){
